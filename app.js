@@ -34,6 +34,10 @@ app.get('/about', (req, res) => {
   res.render('about', { title: 'About' });
 });
 
+app.get('/valoro', (req, res) => {
+  res.render('valoro', { title: 'Valoro' });
+});
+
 // blog routes
 app.use('/blogs', blogRoutes);
 

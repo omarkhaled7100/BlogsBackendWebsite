@@ -4,7 +4,8 @@ const blogController = require('../controllers/blogController');
 const router = express.Router();
 
 router.get('/create', blogController.blog_create_get);
-router.get('/valoro', blogController.blog_valoro_get);
+//router.get('/valoro', blogController.blog_valoro_get);
+
 router.get('/', blogController.blog_index);
 router.post('/', blogController.blog_create_post);
 router.get('/:id', blogController.blog_details);

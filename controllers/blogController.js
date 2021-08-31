@@ -25,9 +25,10 @@ const blog_details = (req, res) => {
 const blog_create_get = (req, res) => {
   res.render('create', { title: 'Create a new blog' });
 }
+/*
 const blog_valoro_get = (req, res) => {
   res.render('valoro', { title: 'Valoro' });
-}
+}*/
 
 const blog_create_post = (req, res) => {
   const blog = new Blog(req.body);
@@ -56,6 +57,6 @@ module.exports = {
   blog_details, 
   blog_create_get, 
   blog_create_post, 
-  blog_valoro_get,
+  //blog_valoro_get,
   blog_delete
 }
