@@ -10,7 +10,7 @@ const app = express();
 const dbURI = "mongodb://netninja:test1234@cluster0-shard-00-00.sdxqj.mongodb.net:27017,cluster0-shard-00-01.sdxqj.mongodb.net:27017,cluster0-shard-00-02.sdxqj.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-bmlbw6-shard-0&authSource=admin&retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(result => app.listen(3000))
+  .then(result => app.listen(process.env.PORT || 3000))
   .catch(err => console.log(err));
 
 // register view engine
