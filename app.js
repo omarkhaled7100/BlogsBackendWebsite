@@ -35,7 +35,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/valoro', (req, res) => {
-  res.render('valoro', { title: 'Valoro' });
+  res.render('Valoro', { title: 'Valoro' });
 });
 
 // blog routes
